@@ -18,13 +18,13 @@ Next, we needed to find linkage disequilibrium (LD) proxies for genetic variants
 
 
 # Step 3: Harmonisation
-This step conduct Harmonisation for UK Biobank and FinnGen outcome, produce instrumental variables Output in two-sample MR format.
+This step conduct Harmonisation for and the IVs with different outcome, produce instrumental variables Output in two-sample MR format.
 
 3_harmonisation.R
 
 
 # Step 4: Run two-sample MR analysis
-Once our exposure and outcome datasets were ready, we ran the two-sample MR analysis. We did this separately for UK Biobank and FinnGen. 
+Once our exposure and outcome datasets were ready, we ran the two-sample MR analysis.
 
 4_run_2SMR_for_MainOutcome.R  
 
@@ -41,7 +41,7 @@ This step focuses on performing sensitivity analysis, including "risk_factor_out
 6.5_SensitityAnalyses_risk_factor_outcome.R
 
 # Step 7: Secondary Analyses
-This step focuses on performing sensitivity analysis, including "Subprocess", "LDSC" and "MVMR".
+This step focuses on performing secondary analysis, including "Subprocess", "LDSC" and "MVMR".
 
 6.1_find_LD_proxies_for_Subprocess.R
 6.2_harmonisation_Subprocess.R
@@ -50,7 +50,7 @@ This step focuses on performing sensitivity analysis, including "Subprocess", "L
 7_SecondaryAnalyses_MVMR_with_function.R
 
 # Step 8: Create visualisations
-This step  create graphics diagnostics visualisation for main outcome two-sample MR including scatter plot, funnel plot, forest plot and leave-one-out plot. We created forest plots for discovery, replication and meta analyses using the forestplot packages.
+This step create graphics diagnostics visualisation for main outcome two-sample MR including scatter plot, funnel plot, forest plot and leave-one-out plot. We created forest plots for discovery, replication, meta analyses, MVMR and subprocess using the forplo packages. We also created heritability estimates and genetic association correlation coefficient plots.
 
 8_Create_graphics_diagnostics_visualisations.R 
 8_ForestPlot_MVMR.R
